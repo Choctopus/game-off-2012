@@ -84,9 +84,15 @@ var sprites = {
   }),
 
   octo_body : new Sprite({
-    filename: 'octo_body.png',
+    filename: 'spritesheet_octo_body.png',
+    frames:[
+      [0, 0, 117, 159],
+      [118, 0, 117, 159]
+    ],
     destX : 472,
-    destY : 221
+    destY : 221,
+    continuous: true,
+    duration : 1000
   }),
 
   octo_face : new Sprite({
@@ -113,7 +119,7 @@ var sprites = {
     duration : 500
   }),
 
-  octo_grinder_back : new Sprite({
+  grinder_back : new Sprite({
     filename: 'spritesheet_grinder_back.png',
     frames:[
       [0, 0, 413, 39],
@@ -164,12 +170,15 @@ var sprites = {
     frames:[
       [0, 0, 110, 41],
       [0, 42, 110, 41],
-      [0, 84, 110, 41]
+      [0, 84, 110, 41],
+	  [111, 0, 110, 41],
+	  [111, 42, 110, 41],
+	  [111, 84, 110, 41]
     ],
     destX : 453,
     destY : 0,
     continuous: true,
-    duration : 500
+    duration : 1500
   })
 };
 
