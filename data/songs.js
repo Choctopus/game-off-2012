@@ -4,29 +4,29 @@ var songs = new Songs([
     artist:   'Bass Assassin',
     filename: '8-bit-detective',
     website: 'http://freemusicarchive.org/music/Bass_Assassin/Peony_Lantern_Split_EP/8bitDetective',
-    difficulty: 'medium',
+    difficulty: 'Easy',
     license:  'Creative Commons Attribution-NonCommercial',
 	  end: 78000,
     queues: [
       [3500, 4750, 10250, 13500, 15250, 20500, 23750, 27500, 30500, 36750, 39000, 44000, 45750, 51000, 54750, 58000, 59750, 65000, 72000, 77250],
       [6750, 8500, 11750, 13500, 15250, 20500, 25500, 29250, 31500, 36000, 40000, 47750, 49500, 52750, 55750, 61750, 63500, 66750, 68500, 73750, 78000],
       [3500, 4750, 10250, 17000, 18500, 21750, 25500, 29250,32500, 35250, 41000, 47750, 49500, 52750, 56750, 61750, 63500, 66750, 69500, 73750, 75250, 78000],
-      [6750, 8500, 11750, 17000, 18500, 21500, 23750, 27500, 33500, 34500, 42000, 44000, 45750, 51000, 58000, 59750, 65000, 70500, 72000, 76250]
+      [6750, 8500, 11750, 17000, 18500, 21750, 23750, 27500, 33500, 34500, 42000, 44000, 45750, 51000, 58000, 59750, 65000, 70500, 72000, 76250]
     ]
   }),
   new Song({
-    name:     'Bass Assassin',
-    artist:   'Bass Assassin',
-    filename: 'bass-assassin',
-    website: 'http://freemusicarchive.org/music/Bass_Assassin/Peony_Lantern_Split_EP/BassAssassin', 
-    difficulty: 'very easy',
-    license:  'Creative Commons Attribution-NonCommercial',
-	end: 64000,
+    name:     'The Voyage',
+    artist:   'Rushjet1',
+    filename: 'the-voyage',
+    website: 'http://nsf.4x86.com/', 
+    difficulty: 'Hard',
+    license:  'Creative Commons Attribution-NonCommercial-ShareAlike',
+	end: 120000,
     queues: [
-      [],
-      [],
-      [],
-      []
+      [2000, 2500, 5250, 6000, 6500, 7750, 9250, 10000, 10750, 11250, 13500, 14000, 14750, 15250, 16500, 19000, 19500, 21750, 22250, 24500, 25250, 28000, 30250],
+      [2750, 5000, 6750, 8000, 9000, 10750, 11250, 13500, 14000, 14750, 15250, 20000, 20750, 21250, 22750, 25750, 27500, 28500, 29250, 29750, 30750, 31250],
+      [3000, 4750, 7000, 8250, 8750, 11500, 12000, 12750, 13250, 15500, 16000, 17000, 17750, 18250, 20000, 20750, 21250, 23250, 23750, 26250, 27250, 28500, 29250, 29750, 30750, 31250],
+      [3250, 4000, 4500, 7250, 8500, 10000, 11500, 12000, 12750, 13250, 15500, 16000, 17250, 17750, 18250, 19000, 19500, 21750, 23750, 24500, 26750, 28000, 30250]
     ]
   }),
   new Song({
@@ -34,8 +34,9 @@ var songs = new Songs([
     artist:   'Jason Shaw',
     filename: 'night-rave',
     website: 'http://audionautix.com/index.html',
-    difficulty: 'easy',
+    difficulty: 'Very Easy',
     license:  'Creative Commons Attribution',
+	end: 90000,
     queues: [
       [3500, 5000, 8000, 16750, 20500, 23500, 34000, 39000, 43000, 44750, 47750, 58750, 64000, 67000, 76500, 81500, 85500],
       [11500, 15500, 17750, 27000, 31000, 35000, 41000, 51750, 55750, 59750, 70500, 74500, 77500, 83500, 89500],
@@ -49,7 +50,7 @@ var songs = new Songs([
     filename: 'tech-talk',
     license:  'Creative Commons Attribution',
     website: 'http://audionautix.com/index.html',
-    difficulty: 'hard',
+    difficulty: 'Medium',
 	end: 86000,
     queues: [
       [1500, 5500, 8500, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20500, 23500, 24500, 25500, 26500, 27500, 28500, 29500, 30500, 31500, 33000, 36000, 37000, 38000, 41000, 42000, 44000, 46250, 48000, 49000, 52000, 53000, 54000, 55000, 56500, 59500, 60500, 61500, 64500, 65500, 68500, 71500, 72000, 73000, 74000, 79000, 80000, 82500],
@@ -64,7 +65,7 @@ var songs = new Songs([
     filename: 'trick-and-or-treat',
     license:  'Creative Commons Attribution-NonCommercial',
     website: 'http://freemusicarchive.org/music/Nordloef/Microhorror_Compilation_Vol_1_Part_II_-_The_Lab/04Nordloef_-_trick_and_or_treat_the_candy_raid_is_on',
-    difficulty: 'very hard',
+    difficulty: 'Very Hard',
 	end: 71000,
     queues: [
       [],
