@@ -2,7 +2,7 @@ MenuView = Backbone.View.extend({
 
   template: _.template($('#menu-template').html()),
 
-  className: 'menu',
+  className: 'main-menu',
 
   events: {
     'hover li': 'select',

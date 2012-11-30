@@ -27,83 +27,99 @@ body {
 box-shadow:         0px 3px 12px rgba(50, 50, 50, 0.75);
 }
 
-.menu img {
+dt, dd {
+	display: inline;
+}
+
+#mute {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.songs {
+	margin-top: 20px;
+}
+
+.song-list-item {
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.song-list-item, small, p, #mute{
+	font-family: helvetica, arial, sans-serif;
+}
+
+.main-menu img {
 	position: absolute;
 	left: 75px;
 	top: 40px;
 }
 
-.menu ul {
-	position: absolute;
-	margin-top: 220px;
-	width : 300px;
-	left: 170px;
+.main-menu ul {
+	padding-top: 220px;
+}
+
+.game-text {
 	font-size: 34px;
+	color: #f29372;
 }
 
 .menu li {
-	list-style: none;
 	text-align: center;
 	color: #817981;
+	font-size: 26px;
+	cursor: pointer;
 }
 
 .menu .selected {
 	color :#f29372;
-	font-size: 120%;
+	font-size: 44px;
 }
 
 .song canvas{
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 0; left: 0;
 	background-image: url('../img/background.png');
 }
 
-.song .paused, .menu ul, .game-text, .action, #status {
+.song .paused, .menu li, .game-text, .action, #status, h2 {
 	font-family: 'Galindo', cursive;
 }
 
-#score-text, #combo-text, #ready, #go {
+#score-text, #combo-text {
 	color: green;
 	position: absolute;
 	z-index: 100;
 	font-size: 30px;
 }
 
+#score-text, #combo-text {
+	color: #669f7d;
+}
+
 #score-text {
 	top: 50px;
 }
 
-#ready, #go {
-	top: 210px;
-	z-index: 100;
+#combo-text {
+	top: 50px;
 }
 
-#pause, #game-over, #clear {
+#ready, #go, #pause, #game-over, #clear {}
+
+ .center {
 	position: absolute;
-	display: none;
 	z-index: 100;
+	left: 0;
+	right: 0;
 }
 
-#game-over, #clear {
-	color : red;
-	font-size: 30px;
-	top: 210px;
-	left: 300px;
+#pause, #game-over, #ready, #go, #status, #clear {
+	top: 180px;
 }
 
-#go, #clear {
+#go, #clear, #pause, #game-over, #status, .action {
 	display: none;
-}
-
-
-#pause {
-	top : 120px;
-	left: 300px;
-}
-
-#clear {
-	color : blue;
 }
 
 .choctopus {
@@ -116,8 +132,7 @@ box-shadow:         0px 3px 12px rgba(50, 50, 50, 0.75);
 	right: 0;
 }
 
-.action, #status {
-	display: none;
+.action {
 	position: absolute;
 	z-index: 1000;
 	top: 382px;
@@ -147,8 +162,6 @@ box-shadow:         0px 3px 12px rgba(50, 50, 50, 0.75);
 }
 
 #status {
-	top: 250px;
-	left: 250px;
 	font-size: 40px;
 }
 

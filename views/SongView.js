@@ -5,7 +5,7 @@ SongView = Backbone.View.extend({
   className: 'song',
 
   events: {
-    'click #pause .menu' : 'backToMenu',
+    'click #pause .return-main-menu' : 'backToMenu',
     'click .choose' : 'backToChoose',
     'click .retry' : 'retry',
   },

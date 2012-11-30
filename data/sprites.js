@@ -143,22 +143,6 @@ var sprites = {
     filename: 'belts.png',
     destX : 36,
     destY : 0
-  }),
-
-  flexible_pipe : new Sprite({
-    filename: 'spritesheet_flexible_pipe.png',
-    frames:[
-      [0, 0, 110, 41],
-      [0, 42, 110, 41],
-      [0, 84, 110, 41],
-	  [111, 0, 110, 41],
-	  [111, 42, 110, 41],
-	  [111, 84, 110, 41]
-    ],
-    destX : 453,
-    destY : 0,
-    continuous: true,
-    duration : 1500
   })
 };
 
@@ -195,5 +179,21 @@ var foreground = {
     filename: 'boxes.png',
     destX : 0,
     destY : 381
+  }),
+
+  flexible_pipe : new Sprite({
+    filename: 'spritesheet_flexible_pipe.png',
+    frames:[
+      [0, 0, 110, 41],
+      [0, 42, 110, 41],
+      [0, 84, 110, 41],
+    [111, 0, 110, 41],
+    [111, 42, 110, 41],
+    [111, 84, 110, 41]
+    ],
+    destX : 453,
+    destY : 0,
+    continuous: true,
+    duration : 1500
   })
 }
