@@ -78,36 +78,31 @@
       <p>Design and animation: Stephanie Owens</p>
       <h2>Music Credits</h2>
       <ul id="song-credits"></ul>
-      <small>Press esc to return to main menu</small>
     </script>
 
     <script type="text/template" id="highscore-template">
       <h2>High Scores</h2>
       <ul id="scores"></ul>
-      <small>Press esc to return to main menu</small>
     </script>
 
     <script type="text/template" id="howto-template">
       <h2>How to Play</h2>
       <p>Select start and choose a song. Press the <b>F</b>, <b>G</b>, <b>H</b>, and <b>J</b> keys on your keyboard as the fork, push, pull, and clone symbols go down the conveyer to the beat of the music.<p>
       <p>The better your timing, the higher your score will be!</p>
-      <small>Press esc to return to main menu</small>
     </script>
 
     <script type="text/template" id="songs-template">
-      <h2>Choose a song</h2>
+      <h2>Choose a Song</h2>
       <ul></ul>
-      <small>Press esc to return to main menu</small>
     </script>
 
     <script type="text/template" id="song-list-item-template">
       <h3><%= name %></h3>
       <dl>
-        <dt>Artist:</dt>
+        <dt>by </dt>
         <dd><%= artist %><dd><br>
-        <dt>Difficulty:</dt>
-        <dd><%= difficulty %></a><dd>
       </dl>
+      <span class="difficulty"><%= difficulty %></span>
     </script>
 
     <script type="text/template" id="song-credit-template">

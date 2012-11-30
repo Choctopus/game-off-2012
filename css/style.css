@@ -27,8 +27,29 @@ body {
 box-shadow:         0px 3px 12px rgba(50, 50, 50, 0.75);
 }
 
+.howto, .highscore, .credits {
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	padding: 60px 90px;
+	text-align: left;
+	color: #817981;
+}
+
+.howto {
+	background-image: url('../img/how_to_background.png');
+}
+
 dt, dd {
 	display: inline;
+}
+
+.difficulty {
+	text-transform: uppercase;
+}
+
+.difficulty, dl {
+	font-size: 80%;
 }
 
 #mute {
@@ -37,7 +58,8 @@ dt, dd {
 }
 
 .songs {
-	margin-top: 20px;
+	margin-top: 50px;
+	color: #817981;
 }
 
 .song-list-item {
