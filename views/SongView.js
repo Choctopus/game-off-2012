@@ -11,21 +11,27 @@ SongView = Backbone.View.extend({
 
   initialize: function(){
     this.render();
-    this.canvas = this.$el.find('canvas')[0];
-    this.canvas.width  = 640;
-    this.canvas.height = 480;
-    this.audio = this.$el.find('audio')[0];
-    this.audio.setAttribute('src', 'audio/songs/' + this.model.get('filename') + '.mp3');
-    this.audio.load();
+    if(game.muted){this.audio.muted = true}
     this.score = 0;
     this.combo = 0;
     this.gameOver = false;
     this.finished = false;
     this.sprites = new Array();
-    this.queues = _.clone(this.model.get('queues'));
+    this.queues = [];
+    this.queues[0] = _.clone(this.model.get('queues')[0]);
+    this.queues[1] = _.clone(this.model.get('queues')[1]);
+    this.queues[2] = _.clone(this.model.get('queues')[2]);
+    this.queues[3] = _.clone(this.model.get('queues')[3]);
     this.active   = [[],[],[],[]];
     this.inactive = [[],[],[],[]];
     this.missed   = [[],[],[],[]];
+    this.canvas = this.$el.find('canvas')[0];
+    this.canvas.width  = 640;
+    this.canvas.height = 480;
+    this.audio = this.$el.find('audio')[0];
+    game.audio.current_track = this.audio;
+    this.audio.setAttribute('src', 'audio/songs/' + this.model.get('filename') + '.mp3');
+    this.audio.load();
     if(localStorage[this.model.get('filename')] === undefined){
       localStorage[this.model.get('filename')] = 0;
     }
@@ -94,7 +100,6 @@ SongView = Backbone.View.extend({
   },
 
   checkEnd: function () {
-
     if(this.score >= 0 && this.score < 5000){
       sprites.octo_face.set('current_frame', 0);
     }
@@ -230,7 +235,6 @@ SongView = Backbone.View.extend({
   },
 
   animate: function() {
-
     if(!this.gameOver && !this.finished){
       requestAnimationFrame(this.animate);
 
@@ -289,6 +293,9 @@ SongView = Backbone.View.extend({
   destroy: function() {
     $(document).unbind('keydown');
     $(document).unbind('keyup');
+    this.finished = true;
+    this.unbind();
+    this.clearAllIntervals();
   }
 
 });
