@@ -10,7 +10,8 @@
 
     <div>
       <div id="mute">Mute</div>
-      <p>P or Esc Pauses game</p>
+      <p>Esc. for previous screen</p>
+      <p>(P or Esc Pauses game)</p>
     </div>
 
     <audio class="click" src="audio/effects/click.wav"></audio>
@@ -38,7 +39,7 @@
       <div id="pause" class="center">
         <span class="game-text">Paused</span>
         <ul class="menu">
-          <li class="return-main-menu">Main menu</li>
+          <li class="return-main-menu">Main Menu</li>
           <li class="choose">Select a Song</li>
           <li class="retry">Restart</li>
         <ul>
@@ -74,8 +75,10 @@
 
     <script type="text/template" id="credits-template">
       <h2>Choctopus Games</h2>
-      <p>Programming: Graham Conzett</p>
-      <p>Design and animation: Stephanie Owens</p>
+      <div class="us">
+        <p>Programming: Graham Conzett</p>
+        <p>Design and animation: <a href="http://behance.com/stepho">Stephanie Owens</a></p>
+      </div>
       <h2>Music Credits</h2>
       <ul id="song-credits"></ul>
     </script>
@@ -107,8 +110,8 @@
 
     <script type="text/template" id="song-credit-template">
       <li>
-      <a href="<%= website %>"><%= artist %></a> - <%= name %></br>
-      <%= license %>
+      <%= name %> by <a href="<%= website %>"><%= artist %></a></br>
+      <small><%= license %></small>
       </li>
     </script>
 

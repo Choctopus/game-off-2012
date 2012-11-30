@@ -36,6 +36,10 @@ box-shadow:         0px 3px 12px rgba(50, 50, 50, 0.75);
 	color: #817981;
 }
 
+a {
+	color: #817981;
+}
+
 .howto {
 	background-image: url('../img/how_to_background.png');
 }
@@ -55,6 +59,7 @@ dt, dd {
 #mute {
 	cursor: pointer;
 	font-weight: bold;
+	text-decoration: underline;
 }
 
 .songs {
@@ -67,8 +72,20 @@ dt, dd {
 	cursor: pointer;
 }
 
-.song-list-item, small, p, #mute, #song-credits li{
+.song-list-item, small, p, #mute, #song-credits li, .highscore{
 	font-family: helvetica, arial, sans-serif;
+}
+
+#scores li {
+	margin: 10px 0;
+}
+
+#song-credits li {
+	margin-bottom: 15px;
+}
+
+.credits .us {
+	margin-bottom: 15px;
 }
 
 .main-menu img {
@@ -109,7 +126,6 @@ dt, dd {
 }
 
 #score-text, #combo-text {
-	color: green;
 	position: absolute;
 	z-index: 100;
 	font-size: 30px;
@@ -117,14 +133,16 @@ dt, dd {
 
 #score-text, #combo-text {
 	color: #669f7d;
+	left: 460px;
+	font-size: 130%;
 }
 
 #score-text {
-	top: 50px;
+	top: 120px;
 }
 
 #combo-text {
-	top: 50px;
+	top: 150px;
 }
 
 #ready, #go, #pause, #game-over, #clear {}
@@ -134,6 +152,10 @@ dt, dd {
 	z-index: 100;
 	left: 0;
 	right: 0;
+}
+
+#go, #ready {
+	color: #669f7d;
 }
 
 #pause, #game-over, #ready, #go, #status, #clear {
