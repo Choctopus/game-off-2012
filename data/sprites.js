@@ -145,12 +145,6 @@ var sprites = {
     destY : 0
   }),
 
-  machine_front : new Sprite({
-    filename: 'machine_front.png',
-    destX : 0,
-    destY : 0
-  }),
-
   flexible_pipe : new Sprite({
     filename: 'spritesheet_flexible_pipe.png',
     frames:[
@@ -176,6 +170,12 @@ var markers = [
 ];
 
 var foreground = {
+
+  machine_front : new Sprite({
+    filename: 'machine_front.png',
+    destX : 0,
+    destY : 0
+  }),
 
   octo_grinder_front : new Sprite({
     filename: 'spritesheet_grinder_front.png',
