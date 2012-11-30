@@ -191,9 +191,17 @@ game.events.on("playSound", function(sound) {
 
 function handleVisibilityChange() {
   if (document.webkitHidden) {
-    game.mute();
+    $('audio.menu-music')[0].muted = true
+    if(game.audio.current_track){
+      game.audio.current_track.muted = true
+    }
   } else {
-    game.unmute();
+    if(!game.muted){
+      $('audio.menu-music')[0].muted = false
+      if(game.audio.current_track){
+        game.audio.current_track.muted = false
+      }
+    }
   }
 }
 
