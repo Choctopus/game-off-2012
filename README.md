@@ -3,7 +3,7 @@
 ## A funky rhythm game (currently Webkit only)
 
 ###Background
-GitHub users fork, push, pull, and clone everyday, but who makes sure those requests reach their correct destination? On the back end of GitHub, Git-bot sorts those actions to the beat of his favorite tunes under the supervision of Url the unicorn. Watch as Git-bot's actions corresspond to the fork, push, pull, and clone requests he is sorting!
+GitHub users fork, push, pull, and clone everyday, but who makes sure those requests reach their correct destination? On the back end of GitHub, Git-bot sorts those actions to the beat of his favorite tunes under the supervision of Url the unicorn. Watch as Git-bot's actions correspond to the fork, push, pull, and clone requests he is sorting!
 
 ###How to Play
 Help Git-bot process requests in time to his music! Press the F, G, H, and J keys on your keyboard as the fork, push, pull, and clone symbols travel through the factory and down the conveyer belt. Sort all the actions correctly, or Url the unicorn will take Git-bot’s music away. The better your timing, the higher your score will be!
